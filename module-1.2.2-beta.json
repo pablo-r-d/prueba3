@@ -1,0 +1,144 @@
+{
+    "id": "drakkenheim-core",
+    "version": "1.2.2-beta",
+    "protected": false,
+    "title": "Dungeons of Drakkenheim",
+    "description": "A 5e adventure where malevolent monsters and rival factions clash in a dark city devastated by a mysterious meteor shower!",
+    "authors": [
+        {
+            "name": "Ghostfire Gaming",
+            "url": "https://ghostfiregaming.com/dungeons-of-drakkenheim/"
+        }
+    ],
+    "url": "https://ghostfiregaming.com/dungeons-of-drakkenheim/",
+    "bugs": "https://support.sigil-services.com",
+    "manifest": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/drakkenheim-core/module.json",
+    "changelog": "",
+    "manifestPlusVersion": "1.0.0",
+    "media": [
+        {
+            "type": "cover",
+            "url": ""
+        },
+        {
+            "type": "icon",
+            "url": ""
+        }
+    ],
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11.315",
+        "maximum": "11"
+    },
+    "relationships": {
+        "recommends": [
+            {
+                "id": "dice-so-nice",
+                "type": "module",
+                "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json",
+                "reason": "Dungeons of Drakkenheim comes with a special dice skin for Dice so Nice."
+            }
+        ],
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+                "compatibility": {
+                    "minimum": "2.4.0",
+                    "verified": "2.4.1",
+                    "maximum": "2.4.9"
+                }
+            }
+        ]
+    },
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "esmodules": [
+        "index.js"
+    ],
+    "styles": [
+        "style.css"
+    ],
+    "packs": [
+        {
+            "label": "Adventure",
+            "type": "Adventure",
+            "name": "adventures",
+            "path": "packs/adventures",
+            "system": "dnd5e",
+            "package": "adventures",
+            "visible": true,
+            "banner": "modules/drakkenheim-core/assets/art/0001_CINE_Drakenheim_City_CMYK_CUT.webp"
+        },
+        {
+            "label": "Items",
+            "type": "Item",
+            "name": "items",
+            "path": "packs/items",
+            "system": "dnd5e",
+            "package": "drakkenheim-core",
+            "visible": true,
+            "banner": "modules/drakkenheim-core/assets/art/0004_CINE_Inside_the_crater_CMYK_CUT.webp"
+        },
+        {
+            "label": "Spells",
+            "type": "Item",
+            "name": "spells",
+            "path": "packs/spells",
+            "system": "dnd5e",
+            "package": "drakkenheim-core",
+            "visible": true,
+            "banner": "modules/drakkenheim-core/assets/art/0004_CINE_Inside_the_crater_CMYK_CUT.webp"
+        },
+        {
+            "label": "Roll Tables",
+            "type": "RollTable",
+            "name": "tables",
+            "path": "packs/tables",
+            "system": "dnd5e",
+            "package": "drakkenheim-core",
+            "visible": true,
+            "banner": "modules/drakkenheim-core/assets/art/0004_CINE_Inside_the_crater_CMYK_CUT.webp"
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "Drakkenheim",
+            "sorting": "m",
+            "color": "#311432",
+            "packs": [],
+            "folders": [
+                {
+                    "name": "Dungeons of Drakkenheim",
+                    "sorting": "m",
+                    "color": "#311432",
+                    "packs": [
+                        "adventures",
+                        "items",
+                        "spells",
+                        "tables"
+                    ]
+                }
+            ]
+        }
+    ],
+    "flags": {
+        "drakkenheim-core": {
+            "adventureImporter": {
+                "Compendium.drakkenheim-core.adventures.Adventure.drakkcoradv00001": {
+                    "initialSceneId": "DhuFVrg8Z0T8KsaW",
+                    "initialJournalEntryId": "drakkenc01chapte",
+                    "initialJournalPageId": "01chapter1intr00",
+                    "additionalItems": {},
+                    "removeItems": {}
+                }
+            }
+        }
+    }
+}
